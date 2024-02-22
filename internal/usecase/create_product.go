@@ -3,8 +3,8 @@ package usecase
 import "github.com/bonfimjustino7/kafka-go-example/internal/entity"
 
 type CreateProductInputDto struct {
-	Name  string
-	Price float64
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
 type CreateProductOutputDto struct {
